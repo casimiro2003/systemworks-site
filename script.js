@@ -54,39 +54,23 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
   const form = e.target;
   const formData = new FormData(form);
-  const data = Object.fromEntries(formData);
 
-  // Option 1: Email via mailto (simple, no backend needed)
-  const subject = encodeURIComponent('New Project Inquiry from ' + data.name);
-  const body = encodeURIComponent(
-    `Name: ${data.name}\n` +
-    `Email: ${data.email}\n` +
-    `Business: ${data.business || 'Not provided'}\n\n` +
-    `Message:\n${data.message}`
-  );
-
-  window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
-
-  // Option 2: If using a service like Formspree, Netlify Forms, etc.
-  // Uncomment and update the URL:
-  /*
-  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+  fetch('https://formspree.io/f/xvzgdgrj', {
     method: 'POST',
     body: formData,
     headers: { 'Accept': 'application/json' }
   })
   .then(response => {
     if (response.ok) {
-      alert('Thanks! I\'ll get back to you within 24 hours.');
+      alert('Thanks! We\'ll get back to you within 24 hours.');
       form.reset();
     } else {
-      alert('Oops! Something went wrong. Please email me directly.');
+      alert('Oops! Something went wrong. Please try again.');
     }
   })
   .catch(error => {
-    alert('Oops! Something went wrong. Please email me directly.');
+    alert('Oops! Something went wrong. Please try again.');
   });
-  */
 });
 
 // Smooth scroll for navigation links
