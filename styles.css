@@ -82,10 +82,14 @@ h2 {
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.logo svg {
+  height: 32px;
+  width: auto;
 }
 
 .nav-links {

@@ -1,0 +1,8 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon -->
+  <polygon points="35,10 60,25 60,55 35,70 10,55 10,25" fill="#F97316" stroke="none"/>
+  <polygon points="35,20 50,30 50,50 35,60 20,50 20,30" fill="white" stroke="none"/>
+
+  <!-- Text -->
+  <text x="80" y="52" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1e293b">SystemWorks</text>
+</svg>
