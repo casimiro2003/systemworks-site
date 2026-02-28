@@ -3,463 +3,423 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SystemWorks | Digital Systems That Enhance Workflow & Save Time</title>
-  <meta name="description" content="We build digital systems, automation, and AI-powered tools that save your business time. Custom portals, dashboards, and workflows — built to work.">
+  <title>Systemworks | We Run Your Business Tech</title>
+  <meta name="description" content="Systemworks builds and runs the digital infrastructure inside your business — ops systems, AI automation, custom software. We become the tech backbone of your company.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav">
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
     <div class="nav-container">
       <a href="#" class="logo">
-        <svg width="140" height="32" viewBox="0 0 280 70" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="25,5 45,17 45,41 25,53 5,41 5,17" fill="#F97316"/>
-          <polygon points="25,12 38,21 38,37 25,46 12,37 12,21" fill="white"/>
-          <text x="55" y="38" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#1e293b">SystemWorks</text>
+        <svg width="32" height="32" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,4 54,18 54,42 30,56 6,42 6,18" fill="#F97316"/>
+          <polygon points="30,14 44,22 44,38 30,46 16,38 16,22" fill="white"/>
         </svg>
+        <span>Systemworks</span>
       </a>
       <div class="nav-links">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#proof">Our Work</a>
         <a href="#services">Services</a>
-        <a href="#work">Solutions</a>
-        <a href="#contact" class="btn-nav">Let's Talk</a>
+        <a href="#contact" class="btn-nav">Get Started</a>
       </div>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#what-we-do">What We Do</a>
+      <a href="#proof">Our Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Get Started</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">🟢 Taking on 3 new clients this month</div>
-      <h1>Digital systems that <span class="highlight">enhance workflow</span> and save your business time</h1>
-      <p class="hero-sub">We build desktop tools, automations, and AI-powered utilities that eliminate repetitive work. No apps — just solutions that run.</p>
+      <div class="hero-tag">
+        <span class="dot-green"></span>
+        Available — taking on new clients now
+      </div>
+      <h1>We become the <span class="highlight">tech backbone</span> of your business</h1>
+      <p class="hero-sub">Most businesses run on broken processes, disconnected tools, and manual work that drains time and money. We go in, build the systems, run the infrastructure, and wire everything together — so you don't have to think about it.</p>
       <div class="hero-cta">
-        <a href="https://calendly.com/systemworks-co/new-meeting" class="btn-primary">Book a Free Call</a>
-        <a href="#work" class="btn-secondary">Browse Solutions</a>
+        <a href="#contact" class="btn-primary">Talk to Us →</a>
+        <a href="#proof" class="btn-ghost">See Our Work</a>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Custom Built</span>
+      <div class="hero-proof">
+        <div class="proof-item">
+          <strong>$0</strong>
+          <span>wasted on software that doesn't fit</span>
         </div>
-        <div class="stat">
-          <span class="stat-number">24hr</span>
-          <span class="stat-label">Response Time</span>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <strong>100%</strong>
+          <span>custom — built for how you actually work</span>
         </div>
-        <div class="stat">
-          <span class="stat-number">0</span>
-          <span class="stat-label">Monthly Fees*</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem Section -->
-  <section class="problem">
-    <div class="container">
-      <h2>Sound familiar?</h2>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <span class="problem-icon">📋</span>
-          <p>"We're still using spreadsheets for everything"</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">🔄</span>
-          <p>"My team wastes hours on copy-paste work"</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">😤</span>
-          <p>"Our systems don't talk to each other"</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-icon">📱</span>
-          <p>"Clients keep asking for status updates"</p>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <strong>Ongoing</strong>
+          <span>we stay embedded, not just deliver and leave</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
+  <!-- PAIN SECTION -->
+  <section class="pain" id="what-we-do">
     <div class="container">
-      <h2>What We Build</h2>
-      <p class="section-sub">Desktop tools and automations that fit your workflow — not the other way around</p>
+      <div class="pain-header">
+        <p class="section-label">Sound familiar?</p>
+        <h2>Your business is leaking time and money every single day</h2>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">📋</div>
+          <h3>"We're still doing this in spreadsheets"</h3>
+          <p>Manual tracking that breaks, gets stale, and nobody trusts.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🔄</div>
+          <h3>"My team wastes hours copying data between systems"</h3>
+          <p>Tools that don't talk to each other. People bridging the gap by hand.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">😤</div>
+          <h3>"We have no visibility into what's happening"</h3>
+          <p>No real-time data. Decisions made on gut feel or yesterday's numbers.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📦</div>
+          <h3>"Orders fall through the cracks constantly"</h3>
+          <p>No system for tracking status, assigning work, or notifying customers.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📉</div>
+          <h3>"We're leaving money on the table with bad pricing"</h3>
+          <p>No data on margins, velocity, or what the market will actually bear.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🧠</div>
+          <h3>"Everything lives in one person's head"</h3>
+          <p>Key knowledge locked up in people, not systems. One departure = chaos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF / CASE STUDY -->
+  <section class="proof" id="proof">
+    <div class="container">
+      <p class="section-label">Real work. Real results.</p>
+      <h2>We built the entire operational brain of a <span class="highlight">South Florida distribution company</span></h2>
+      <p class="proof-sub">They were running a multi-million dollar supply business on spreadsheets, phone calls, and tribal knowledge. We went in and built everything from scratch — and we're still running it.</p>
+
+      <div class="case-study">
+        <div class="cs-left">
+          <div class="cs-block">
+            <div class="cs-icon">🖥️</div>
+            <div>
+              <h4>Live Operations Center</h4>
+              <p>Real-time order management for the entire team. Pickers, dispatchers, and shipping — all working from one system. Orders flow from the website directly into the workflow.</p>
+            </div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-icon">🚚</div>
+            <div>
+              <h4>Hot Shot Dispatch & Route Optimization</h4>
+              <p>Automated dispatch assignment, 25-mile radius enforcement, route optimization, driver mobile views, and real-time customer SMS notifications — all built in.</p>
+            </div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-icon">🧠</div>
+            <div>
+              <h4>AI Inventory Intelligence</h4>
+              <p>15,600+ SKUs with live QuickBooks sync. Forecasting, EOQ, margin analysis, ABC classification, reorder automation, and an AI agent that answers business questions.</p>
+            </div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-icon">🔍</div>
+            <div>
+              <h4>Custom Search Engine</h4>
+              <p>Academic-grade BM25 search with autocomplete, fuzzy matching, and bilingual support — built from scratch inside WooCommerce.</p>
+            </div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-icon">📦</div>
+            <div>
+              <h4>UPS Shipping Integration</h4>
+              <p>Automated label generation, box calculation, tracking webhooks, and customer delivery notifications. Fully wired into the ops system.</p>
+            </div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-icon">📊</div>
+            <div>
+              <h4>27 Years of Data, Now Usable</h4>
+              <p>Ingested a decade of QuickBooks history. Sales trends, customer lifetime value, seasonal forecasting — all live in a single dashboard.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs-right">
+          <div class="cs-stats-card">
+            <div class="cs-stat">
+              <span class="cs-number">15,614</span>
+              <span class="cs-label">SKUs tracked live</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-number">27 yrs</span>
+              <span class="cs-label">of sales history ingested</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-number">9</span>
+              <span class="cs-label">AI calculation modules</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-number">4</span>
+              <span class="cs-label">team members on the system daily</span>
+            </div>
+            <div class="cs-stat">
+              <span class="cs-number">∞</span>
+              <span class="cs-label">still running & improving it</span>
+            </div>
+          </div>
+          <div class="cs-quote">
+            <p>"They didn't just build us software. They built us a nervous system."</p>
+            <span>— Distribution company, South Florida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE BUILD -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-label">What we build</p>
+      <h2>End-to-end systems — not just features</h2>
+      <p class="services-sub">We don't hand you a tool and walk away. We design, build, integrate, and operate the full stack of technology inside your business.</p>
 
       <div class="services-grid">
-        <div class="service-card featured">
-          <div class="service-badge">Most Popular</div>
-          <div class="service-icon">🚀</div>
-          <h3>Workflow Automation</h3>
-          <p class="service-tagline">Complete workflow solutions for every station</p>
-          <p>Eliminate repetitive tasks. Connect your tools. Get hours back every week.</p>
-          <ul>
-            <li>Automated reports & emails</li>
-            <li>Data sync between apps</li>
-            <li>Task routing & notifications</li>
-          </ul>
-        </div>
-
         <div class="service-card">
-          <div class="service-icon">🖥️</div>
+          <div class="service-num">01</div>
+          <h3>Operations Systems</h3>
+          <p>Order management, team dashboards, dispatch, pick lists, shipping stations. Your daily ops running on a real system instead of group texts and spreadsheets.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>AI & Automation</h3>
+          <p>AI agents that answer business questions, automate decisions, and surface insights from your data. Repetitive work eliminated. Hours given back.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Data & Intelligence</h3>
+          <p>Forecasting, margin analysis, customer analytics, inventory classification. Turn your historical data into decisions you can act on today.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Integrations & Sync</h3>
+          <p>QuickBooks, WooCommerce, Shopify, POS systems, UPS, payment processors. We wire your tools together so data flows automatically.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
           <h3>Custom Portals & Dashboards</h3>
-          <p>Web-based tools your team or clients can log into. Real-time data, role-based access, your branding.</p>
-          <ul>
-            <li>User authentication & roles</li>
-            <li>Live dashboards & reports</li>
-            <li>Secure client or team access</li>
-          </ul>
+          <p>Web-based tools your team logs into every day. Role-based access, real-time data, your branding. Built for how you actually work.</p>
         </div>
-
         <div class="service-card">
-          <div class="service-icon">🤖</div>
-          <h3>AI-Powered Tools</h3>
-          <p>AI that does the thinking for you. Summarize docs, draft responses, analyze data.</p>
-          <ul>
-            <li>Document summarization</li>
-            <li>Email & response drafting</li>
-            <li>Data analysis & insights</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">📊</div>
-          <h3>Reports & Dashboards</h3>
-          <p>One-click reports and live dashboards. See what matters without digging through spreadsheets.</p>
-          <ul>
-            <li>Automated daily/weekly reports</li>
-            <li>Visual data dashboards</li>
-            <li>Export to PDF or Excel</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">📄</div>
-          <h3>Document Automation</h3>
-          <p>Generate quotes, contracts, and reports automatically. No more manual formatting.</p>
-          <ul>
-            <li>Branded templates</li>
-            <li>Auto-fill from your data</li>
-            <li>PDF generation</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🔧</div>
-          <h3>Custom Desktop Tools</h3>
-          <p>Purpose-built tools for your daily operations. Click a button, get the job done.</p>
-          <ul>
-            <li>Data entry helpers</li>
-            <li>Batch processing tools</li>
-            <li>Custom calculators & utilities</li>
-          </ul>
+          <div class="service-num">06</div>
+          <h3>Infrastructure & Hosting</h3>
+          <p>VPS setup, deployment pipelines, databases, SSL, backups, monitoring. We run it — so it's always up and you never have to think about it.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Ready-to-Go Solutions Section -->
-  <section id="work" class="work">
+  <!-- HOW IT WORKS -->
+  <section class="how">
     <div class="container">
-      <h2>Ready-to-Go Solutions</h2>
-      <p class="section-sub">Pick one. We'll customize it for your business.</p>
-
-      <div class="work-grid">
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">Automation</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">Most Popular</span>
-            <h3>Workflow Automation</h3>
-            <p>Connect your tools, eliminate repetitive tasks, and let your business run itself. Custom workflows built for how you actually work.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> App integrations, task automation, notifications, data sync
-            </div>
+      <p class="section-label">How it works</p>
+      <h2>We go deep, not wide</h2>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Discovery</h3>
+            <p>We map out your operations, find where time and money are leaking, and identify what to build first.</p>
           </div>
         </div>
-
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">AI Tools</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">AI-Powered</span>
-            <h3>AI Document Assistant</h3>
-            <p>Summarize long documents, extract key info, draft responses — all in seconds. Your AI-powered work buddy.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> Doc summarizer, data extractor, response drafter
-            </div>
+        <div class="how-arrow">→</div>
+        <div class="how-step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Build</h3>
+            <p>We design and build the system — custom to your workflow, integrated with your existing tools.</p>
           </div>
         </div>
-
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">Reports</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">Time Saver</span>
-            <h3>Auto-Report Generator</h3>
-            <p>Pull data from your spreadsheets, format it, and generate branded PDF reports with one click.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> Data sync, PDF templates, scheduled emails
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">Files</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">Operations</span>
-            <h3>File Organizer</h3>
-            <p>Automatically sort, rename, and organize files based on your rules. No more messy folders.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> Auto-sorting, bulk rename, folder structure
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">Email</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">Automation</span>
-            <h3>Email Automation</h3>
-            <p>Trigger emails based on events. Follow-ups, reminders, confirmations — all on autopilot.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> Email templates, triggers, scheduling
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-image">
-            <div class="work-placeholder">Data</div>
-          </div>
-          <div class="work-content">
-            <span class="work-tag">Utilities</span>
-            <h3>Data Entry Tool</h3>
-            <p>Speed up repetitive data entry. Pull from one source, push to another. Cut hours of manual work.</p>
-            <div class="work-result">
-              <strong>Includes:</strong> Form auto-fill, data validation, batch import
-            </div>
+        <div class="how-arrow">→</div>
+        <div class="how-step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Embed</h3>
+            <p>We go live with your team, train everyone, and stay in. Ongoing improvements, support, and new features as you grow.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Us Section -->
-  <section class="testimonials">
-    <div class="container">
-      <h2>Why Work With Us</h2>
-      <p class="section-sub">What you get when you choose SystemWorks</p>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">🎯</div>
-          <p class="testimonial-text">Built exactly for your workflow. No bloated features you'll never use. Just tools that solve your specific problem.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">01</div>
-            <div class="author-info">
-              <strong>Custom Fit</strong>
-              <span>Your workflow, your rules</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⚡</div>
-          <p class="testimonial-text">No monthly subscriptions for most tools. You pay once, you own it. Simple hosting costs only if needed.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">02</div>
-            <div class="author-info">
-              <strong>You Own It</strong>
-              <span>No recurring fees</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">🤝</div>
-          <p class="testimonial-text">Direct communication throughout. No confusing jargon. You'll understand exactly what you're getting and how it works.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">03</div>
-            <div class="author-info">
-              <strong>Straight Talk</strong>
-              <span>No BS, just solutions</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cta-banner">
-        <p>See a solution you need? Let's talk about how it fits your business.</p>
-        <a href="https://calendly.com/systemworks-co/new-meeting" class="btn-primary">Book a Free Call</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process Section -->
-  <section class="process">
-    <div class="container">
-      <h2>How It Works</h2>
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <h3>Discovery Call</h3>
-          <p>We talk about your workflow, pain points, and what success looks like.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <h3>Solution Design</h3>
-          <p>We map out exactly what gets built and how it fits your process.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <h3>Build & Deliver</h3>
-          <p>We build it, you test it, we refine until it's exactly right.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <h3>Launch & Support</h3>
-          <p>Go live with full training and ongoing support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
+  <!-- PRICING -->
   <section class="pricing">
     <div class="container">
-      <h2>Investment</h2>
-      <p class="section-sub">Transparent pricing. No surprises.</p>
-
+      <p class="section-label">Investment</p>
+      <h2>Transparent. No surprises.</h2>
       <div class="pricing-grid">
         <div class="pricing-card">
-          <h3>Workflow Automation</h3>
-          <div class="price">$1,000 - $2,500+</div>
-          <p class="price-desc">Based on complexity</p>
-          <ul>
-            <li>Single or multi-step workflows</li>
+          <div class="pricing-header">
+            <h3>Project</h3>
+            <div class="pricing-price">$5,000 – $25,000+</div>
+            <p>One-time build</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Custom software or automation</li>
+            <li>Full design + development</li>
+            <li>Integration with your tools</li>
+            <li>Training & handoff</li>
+            <li>30 days support included</li>
+          </ul>
+          <a href="#contact" class="btn-pricing-outline">Get a Quote</a>
+        </div>
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Embedded Partner</h3>
+            <div class="pricing-price">$2,500 – $6,000/mo</div>
+            <p>We run your tech stack</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Ongoing development & improvements</li>
+            <li>Full infrastructure management</li>
+            <li>Priority support & response</li>
+            <li>New features as you grow</li>
+            <li>Monthly strategy sessions</li>
+            <li>We become your tech team</li>
+          </ul>
+          <a href="#contact" class="btn-pricing">Start the Conversation</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Quick Automation</h3>
+            <div class="pricing-price">$1,000 – $3,000</div>
+            <p>Targeted single solution</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Single workflow automated</li>
             <li>App integrations</li>
-            <li>Data syncing & notifications</li>
+            <li>Data sync & notifications</li>
             <li>14 days support</li>
           </ul>
-        </div>
-
-        <div class="pricing-card featured">
-          <div class="pricing-badge">Most Popular</div>
-          <h3>Full Solution</h3>
-          <div class="price">$5,000 - $20,000+</div>
-          <p class="price-desc">Dashboard, portal, or complete system</p>
-          <ul>
-            <li>Custom portal or dashboard</li>
-            <li>User authentication & roles</li>
-            <li>AI integration available</li>
-            <li>30-60 days support</li>
-          </ul>
-        </div>
-
-        <div class="pricing-card">
-          <h3>Ongoing Partnership</h3>
-          <div class="price">Custom</div>
-          <p class="price-desc">Retainer for continuous work</p>
-          <ul>
-            <li>Priority support & updates</li>
-            <li>New features as needed</li>
-            <li>Monthly check-ins</li>
-            <li>Dedicated availability</li>
-          </ul>
+          <a href="#contact" class="btn-pricing-outline">Get a Quote</a>
         </div>
       </div>
-
-      <p class="pricing-note">Every project starts with a free discovery call. No commitment.</p>
-      <div class="guarantee-box">
-        <strong>💯 Satisfaction Guarantee:</strong> If you're not happy with the final result, we'll revise it until you are — or refund your deposit.
-      </div>
+      <p class="pricing-note">Every engagement starts with a free 20-minute call. No commitment. We'll tell you exactly what we'd build and what it would cost.</p>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="faq">
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
     <div class="container">
-      <h2>Common Questions</h2>
-      <div class="faq-grid">
-        <div class="faq-item">
-          <h3>How long does a project take?</h3>
-          <p>Simple automations: 1-2 weeks. Full solutions: 2-4 weeks. We'll give you a clear timeline before starting.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Do I need technical knowledge?</h3>
-          <p>No. We handle everything and train you on how to use it. If you can click a button, you can use what we build.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What if I need changes later?</h3>
-          <p>Support is included. After that, we offer ongoing partnerships or one-off updates as needed.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What's the payment structure?</h3>
-          <p>50% upfront to start, 50% on completion. For larger projects, we can break it into milestones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Let's Talk</h2>
-      <p class="section-sub">Book a free 20-minute call to discuss your project</p>
-
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <span class="contact-icon">⏰</span>
-            <div>
-              <strong>Response Time</strong>
-              <p>Within 24 hours</p>
-            </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="section-label">Let's talk</p>
+          <h2>Ready to stop duct-taping your business together?</h2>
+          <p>Book a free 20-minute call. We'll look at your operation, tell you what we'd build, and give you a straight answer on cost and timeline.</p>
+          <div class="contact-info">
+            <a href="mailto:admin@systemworks.co" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              admin@systemworks.co
+            </a>
+            <a href="https://systemworks.co" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              systemworks.co
+            </a>
           </div>
         </div>
-
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzgdgrj" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <input type="text" name="business" placeholder="Business Name">
-          <textarea name="message" placeholder="Tell me about your project..." rows="4"></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-      </div>
-
-      <!-- Alternative: Calendly embed placeholder -->
-      <div class="calendly-note">
-        <p>Prefer to book directly? <a href="https://calendly.com/systemworks-co/new-meeting" target="_blank">Schedule on Calendly</a></p>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwzgqoy" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text" name="company" placeholder="Acme Corp">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>What's the biggest operational problem you have right now?</label>
+              <textarea name="message" placeholder="Tell us what's broken or slowing you down..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Send Message →</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 SystemWorks. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg width="28" height="28" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="30,4 54,18 54,42 30,56 6,42 6,18" fill="#F97316"/>
+            <polygon points="30,14 44,22 44,38 30,46 16,38 16,22" fill="white"/>
+          </svg>
+          <span>Systemworks</span>
         </div>
+        <p class="footer-tagline">We build and run the tech backbone of your business.</p>
+        <p class="footer-copy">© 2026 Systemworks. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Sticky CTA -->
-  <div class="sticky-cta">
-    <a href="https://calendly.com/systemworks-co/new-meeting">Book a Free Call →</a>
-  </div>
-
   <script src="script.js"></script>
+  <script>
+    // Mobile nav
+    const menuToggle = document.getElementById('menuToggle');
+    const navMobile = document.getElementById('navMobile');
+    menuToggle.addEventListener('click', () => navMobile.classList.toggle('open'));
+    navMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMobile.classList.remove('open')));
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Fade in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.pain-card, .cs-block, .service-card, .how-step, .pricing-card').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+
+    // Form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+    });
+  </script>
 </body>
 </html>
